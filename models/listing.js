@@ -9,9 +9,12 @@ const listingSchema = new Schema({
     required: true,
   },
   description: String,
-image:{
-    url: String,
-    filename: String
+image: {
+  url: {
+    type: String,
+    default: "https://images.unsplash.com/photo-placeholder",
+  },
+  filename: String,
 },
   price: Number,
   location: String,
