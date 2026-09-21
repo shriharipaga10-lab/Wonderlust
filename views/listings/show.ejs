@@ -9,7 +9,7 @@
   <img src="<%= listing.image ? listing.image.url : 'https://images.unsplash.com/photo-1625505826533-5c80aca7d157?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60' %>" class="card-img-top show-img" alt="listing_image">
   <div class="card-body">
     <p class="card-text">
-        <p><i><%= listing.owner.username %></i></p>
+        <p><i>owned by:<%= listing.owner.username %></i></p>
         <p> <%= listing.description %></p>
         <p>&#8377; <%= listing.price.toLocaleString("en-IN") %></p>
          <p><%= listing.location %></p>
